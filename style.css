@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+
+.main-container-logo {
+  background: #000000;
+  width: 100%;
+  height: 100vh;
+}
+
+.container-logo {
+    position: relative;
+    margin: auto auto;
+    top: 25%;
+    width: 400px;
+    height: 400px;
+
+}
+
+
+.lineX1 {
+    width: 50%;
+    height: 5px;
+    position: absolute;
+    top: 12.5%;
+    left: 0;
+    animation: mymove 1.5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+}
+
+@keyframes mymove {
+    from {left:-1200px; background-color: #000000;}
+    to {left: 0;  background-color: #fff;}
+}
+
+.lineX2 {
+    width: 80%;
+    height: 5px;
+    position: absolute;
+    top: 37.5%;
+    animation: mymove2 1.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+@keyframes mymove2 {
+    from {left:-1200px; background-color: #000000;}
+    to {left: 7.5%;  background-color: #fff;}
+}
+
+.lineX3 {
+    width: 80%;
+    height: 5px;
+    position: absolute;
+    top: 62.5%;
+    animation: mymove3 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes mymove3 {
+    from {left:-1200px; background-color: #000000;}
+    to {left: 12.5%;  background-color: #fff;}
+}
+
+
+.lineX4 {
+    width: 55%;
+    height: 5px;
+    position: absolute;
+    top: 87.5%;
+    animation: mymove4 1.5s;
+    animation-delay: 0.7s;
+    animation-fill-mode: both;
+}
+
+@keyframes mymove4 {
+    from {right:1200px; background-color: #000000;}
+    to {right: 0;  background-color: #fff;}
+}
+
+
+.lineY1 {
+    width: 5px;
+    height: 70%;
+    position: absolute;
+    left: 12.5%;
+    animation: mymove5 1.5s;
+    animation-delay: 0.1s;
+    animation-fill-mode: both;
+}
+
+@keyframes mymove5 {
+    from {top: -1000px; background-color: #000000;}
+    to {top: 0;  background-color: #fff;}
+}
+
+.lineY2 {
+    width: 5px;
+    height: 87%;
+    position: absolute;
+    left: 37.5%;
+    animation: mymove5 1.5s;
+    animation-delay: 0.3s;
+    animation-fill-mode: both;
+}
+
+@keyframes mymove5 {
+    from {top: -1000px; background-color: #000000;}
+    to {top: 0;  background-color: #fff;}
+}
+
+.lineY3 {
+    width: 5px;
+    height: 68%;
+    position: absolute;
+    left: 62.5%;
+    animation: mymove6 1.5s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+
+@keyframes mymove6 {
+    from {top: -1000px; background-color: #000000;}
+    to {top: 12.5%;  background-color: #fff;}
+}
+
+.lineY4 {
+    width: 5px;
+    height: 80%;
+    position: absolute;
+    left: 87.5%;
+    animation: mymove7 1.5s;
+    animation-delay: 0.7s;
+    animation-fill-mode: both;
+}
+
+@keyframes mymove7 {
+    from {bottom: 1000px; background-color: #000000;}
+    to {bottom: 0; background-color: #fff;}
+}
+
+.box1 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(163,141,102,0.9) 0%, rgba(163,141,102,1) 50%, rgba(163,141,102,0.9) 100%);
+}
+.box1 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.container-box1 {
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    position: absolute;
+    top: calc(12.5% + 5px);
+    left: calc(12.5% + 5px);
+    background-color: #000000;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container-box1:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box2 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(16deg, rgba(189,105,57,1) 30%, rgba(189,105,57,0.65) 60%, rgba(189,105,57,0.05) 95%);
+}
+.box2 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.container-box2 {
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    position: absolute;
+    top: calc(12.5% + 5px);
+    left: calc(37.5% + 5px);
+    background-color: #000000;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container-box2:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+.box3 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(10deg, rgba(62,98,133,0.9) 15%, rgba(62,98,133,0.05) 95%);
+}
+.box3 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.container-box3 {
+    cursor: pointer;
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    position: absolute;
+    top: calc(12.5% + 5px);
+    left: calc(62.5% + 5px);
+    background-color: #000000;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container-box3:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box4 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(108,52,78,0.9) 0%, rgba(108,52,78,1) 50%, rgba(108,52,78,0.9) 100%);
+}
+.box4 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.container-box4 {
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    position: absolute;
+    top: calc(37.5% + 5px);
+    left: calc(12.5% + 5px);
+    background-color: #000000;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container-box4:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box5 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0,107,80,1) 0%, rgba(0,107,80,0.9) 100%);
+}
+.box5 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.container-box5 {
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    position: absolute;
+    top: calc(37.5% + 5px);
+    left: calc(37.5% + 5px);
+    background-color: #000000;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box6 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(62,98,133,0.9) 0%, rgba(62,98,133,1) 50%, rgba(62,98,133,0.9) 100%);
+}
+.box6 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.container-box6 {
+    cursor: pointer;
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    position: absolute;
+    top: calc(37.5% + 5px);
+    left: calc(62.5% + 5px);
+    background-color: #fff;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+}
+.container-box6:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box7 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(215deg, rgba(62,98,133,0.95)35%, rgba(62,98,133,0.55) 75%, rgba(62,98,133,0.15) 100%);
+}
+.box7 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.container-box7 {
+    cursor: pointer;
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    position: absolute;
+    top: calc(62.5% + 5px);
+    left: calc(62.5% + 5px);
+    background-color: #000000;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+}
+.container-box7:hover {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.box8 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(170deg, rgba(0,107,80,0.9) 25%, rgba(0,107,80,0.6) 70%, rgba(0,107,80,0.15) 98%);
+}
+.box8 a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.container-box8 {
+    width: calc(25% - 5px);
+    height: calc(25% - 5px);
+    position: absolute;
+    top: calc(62.5% + 5px);
+    left: calc(37.5% + 5px);
+    background-color: #000000;
+    opacity: 0;
+    z-index: 100;
+    transition: opacity 0.3s ease-in-out;
+}
+
+@media (max-width: 980px) {
+    .container-logo {
+        top: 35%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .container-logo {
+        top: 35%;
+        width: 250px;
+        height: 250px;
+    }
+}
+
